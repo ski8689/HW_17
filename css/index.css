@@ -1,0 +1,249 @@
+/*-----Global-----*/
+body{
+    font-family:sans-serif
+}
+h1{
+    font-size: 48px;
+}
+.container{
+    background-color: #f1f1f1;
+    padding: 100px;
+}
+
+.container-whiteback{
+    padding: 100px;
+}
+.container-blackback{
+    padding: 50px;
+    background-color: #686868;
+}
+
+/*-----nav-----*/
+.nav-row ul{
+    list-style: none;
+}
+.nav-row li{
+    float: right;
+}
+.nav-row li a {
+  display: block;
+  padding: 00px 30px 10px 00px;
+  text-decoration: none;
+    font-size: 18px;
+    color: dimgrey;
+    font-weight:bold;
+}
+
+.nav-row li a:hover {
+  text-decoration: underline;
+}
+
+/*-----main-copy-----*/
+.main{
+    display: grid;
+    text-align: center;
+    background-color: #E4E3E3;
+    height: 800px;
+}
+.main-copy-above{
+    text-align: center;
+    margin: 100px 0px 100px 0px;
+    position:relative;
+    z-index: 1
+}
+.seul{
+    color: #E8E8E8;
+    font-size: 250px;
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    -webkit-tranform: translateX(-50%);
+    top:90px;
+        z-index:0;
+}
+.chevron:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.chevron{
+    transition: transform .3s;
+}
+
+/*--About me--*/
+.grid-1{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height:auto;
+    margin-left: 150px;
+    margin-right:150px;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.profile-image img{
+    padding: 50px;
+    width:80%
+}
+.profile-description{
+    padding: 50px;
+}
+.row{
+    clear: both;
+    display: flex;
+}
+
+/*--Button--*/
+ button{
+    background-color: white;
+    border-color: black;
+     border-radius: 20px;
+    color: black;
+    padding: 8px 20px;
+    font-size:15px;
+    font-weight: bold;
+    }
+button:hover{
+    background-color:darkgrey;
+    color: white;
+}
+
+/*--Skill--*/
+
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill img{
+    padding: 30px;
+    width:100px;
+    height: auto;
+    margin: 30px;
+}
+/*-Card*/
+.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    height: auto;
+}
+.card{
+    padding: 30px;
+}
+.card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+hr{
+    width: 100%
+}
+.project a{
+    text-decoration: none;
+    color: black;
+}
+.project a:hover {
+  text-decoration: underline;
+}
+
+.card img{
+    transition: transform .3s;
+    }
+.card img:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    }
+/*footer*/
+.icon-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-social img{
+    padding: 20px;
+    width:40px;
+    height: auto;
+}
+footer p{
+    text-align: center;
+    color: white;
+    font-weight: bold
+}
+
+.icon-social img{
+    transition: transform .3s;
+}
+.icon-social img:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+
+/*-----Responsive-----*/
+@media only screen and (max-width: 720px) {
+    h1{
+        font-size: 30px;
+    }
+    
+    .nav-row li a {
+  display: block;
+  padding: 00px 20px 10px 00px;
+  text-decoration: none;
+    font-size: 16px;
+    font-weight:bold;
+}
+/*Main*/
+    .grid-1{
+        grid-template-columns: none;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+            }
+    .seul{
+        visibility: hidden;
+    }
+/*About me*/
+.profile-description{
+    padding: 0px 30px 30px;
+}
+
+/*Skill Icons*/
+    .skill img{
+        width: 11%;
+        margin: 1px;
+        padding: 15px;
+    }
+    .container{
+        padding: 30px 
+    }
+
+/*project*/    
+    .project{
+        grid-template-columns: none;
+    }
+    .project img{
+        width: 80%
+    }
+    .container-whiteback{
+    padding: 20px;
+    }
+    .card button{
+    margin-bottom: 20px;
+    margin-top: 0px;
+    }
+    .img-phone img{
+        width:50%
+    }
+}
